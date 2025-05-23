@@ -1,0 +1,23 @@
+# Objets compilés
+*.o
+
+# Fichiers exécutables
+pc1
+pc2
+pc3
+pc4
+
+# Sauvegardes d'éditeur
+*~
+*.swp
+*.bak
+
+# Fichiers générés automatiquement
+Makefile.deps
+*.log
+
+# Archives
+*.zip
+
+# Répertoire de build temporaire (si utilisé)
+build/
