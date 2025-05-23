@@ -19,7 +19,6 @@
 #define PC4 (IP){PC_IP, PC4_PORT}
 
 void demander_message(FDU* paquet) {
-
     char choix;
     char message[100];
     char PC[10];
@@ -50,7 +49,6 @@ void demander_message(FDU* paquet) {
 
 }
 void encapsuler(FDU* paquet, IP ip_courant) {
-    printf("encapsuler called\n");
     paquet->ip_source = ip_courant;
 
     int tour = paquet->socket_st %4; // 4 est le nombre de PC dans l'anneau
@@ -70,8 +68,10 @@ void encapsuler(FDU* paquet, IP ip_courant) {
     } 
 }
 
-/*
+// test de la fonction encapsuler
 
+
+/*
 int main() {
     //test
     FDU paquet;
@@ -90,7 +90,5 @@ int main() {
     printf("Status : %d\n", paquet.status);
     return 0;
 }
+
 */
-
-
-

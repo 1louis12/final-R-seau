@@ -28,7 +28,9 @@ void decapsuler(FDU* paquet, IP ip_courant){
         printf("#####\n");
         printf("Nouveau message\n");
         printf("contenu: %s\n", paquet->message);
+        paquet->status = 0; 
         printf("@@@@@\n");
+
         }
 
         if (paquet->status == 1) {

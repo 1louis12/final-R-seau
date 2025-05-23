@@ -82,7 +82,7 @@ int main()
 
         paquet.socket_st ++; // Incrémenter le socket_st
         // Traitement
-        //decapsuler(&paquet, ip_courant);
+        decapsuler(&paquet, ip_courant);
         encapsuler(&paquet, ip_courant);
         sleep(1);
         // Envoi vers PC suivant 
